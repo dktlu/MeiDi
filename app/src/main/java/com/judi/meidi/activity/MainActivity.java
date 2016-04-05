@@ -202,6 +202,10 @@ public class MainActivity extends BaseActivity {
         transaction.commitAllowingStateLoss();
     }
 
+    /**
+     * 隐藏fragment
+     * @param transaction
+     */
     private void hideFragments(FragmentTransaction transaction) {
         if (null != indexFragment) {
             transaction.hide(indexFragment);
