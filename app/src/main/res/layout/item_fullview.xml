@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_fullview_list_1" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_fullview_tag"
+            android:gravity="right|center_vertical"
+            android:paddingRight="2dp"
+            android:text="360°全景图"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rl_photo"
+        android:layout_below="@id/rl_photo"
+        android:layout_marginTop="8dp"
+        android:text="现代欧式 | 水榭华庭"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_like_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_title"
+        android:layout_marginRight="5dp"
+        android:text="98"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@id/tv_title"
+        android:background="@drawable/icon_fullview_like"
+        android:layout_toLeftOf="@id/tv_like_number"/>
+
+    <TextView
+        android:id="@+id/tv_style_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rl_photo"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="8dp"
+        android:text="风格：现代欧式"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_style_name"
+        android:layout_toRightOf="@id/tv_style_name"
+        android:layout_marginLeft="100dp"
+        android:text="面积：120平米"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_house_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rl_photo"
+        android:layout_below="@id/tv_style_name"
+        android:layout_marginTop="4dp"
+        android:text="户型：四室两厅"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_advantage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_area"
+        android:layout_alignTop="@id/tv_house_type"
+        android:text="亮点：欧式 现代 简约"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+</RelativeLayout>
